@@ -1,5 +1,4 @@
 renderAsset = require('./renderAsset')
-htmlTag = hexo.util.html_tag
 
 isNumber = (str) ->
   str? and not /\D+/.test(str)
@@ -31,12 +30,6 @@ assetImgRender = (args, content) ->
     attrs.alt = match[1]
     attrs.title = match[2]
 
-  result = renderAsset 'img', 'src', url, attrs
-
-  if attrs.alt?
-    result += htmlTag 'span', {'class': 'caption'}, attrs.alt
-
-  result
-
+  renderAsset 'img', 'src', url, attrs
 
 hexo.extend.tag.register 'asset_img', assetImgRender
