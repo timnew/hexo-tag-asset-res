@@ -1,6 +1,6 @@
 {
   "name": "hexo-tag-asset-res",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hexo Tags that consume asset files",
   "main": "index.js",
   "scripts": {
