@@ -65,6 +65,6 @@ MIT
 [npm-downloads]: http://img.shields.io/npm/dm/hexo-tag-asset-res.svg?style=flat
 
 [depstat-url]: https://gemnasium.com/timnew/hexo-tag-asset-res
-[depstat-image]: http://img.shields.io/gemnasium/timnew/hexo-tag-asset-res.svb?style=flat
+[depstat-image]: http://img.shields.io/gemnasium/timnew/hexo-tag-asset-res.svg?style=flat
 
 [hexo-url]: http://hexo.io/
