@@ -1,7 +1,7 @@
 hexo-tag-asset-res  [![NPM version][npm-image]][npm-url] [![Dependency Status][depstat-image]][depstat-url]
 ==================
 
-> [Hexo][hexo-url] tags that enable you to reference files in post asset with relative path
+> [Hexo][hexo-url] tags that enable you to reference files in [post asset] with relative path
 
 ## Install
 
@@ -46,6 +46,19 @@ and with get
   <a href="/2014/08/15/a-simple-self-introduction/my_resume.pdf">My Resume</a>
 ```
 
+## Asset Folder
+
+Asset folder can be created manually, it should have the same name as the post
+
+Or
+
+Asset folder can be created automatically when post is created.  
+Adjust the config in `_config.yml`:
+
+```yaml
+post_asset_folder: true
+```
+
 ## Roadmap
 
 * [ ] Custom classes
@@ -68,3 +81,4 @@ MIT
 [depstat-image]: http://img.shields.io/gemnasium/timnew/hexo-tag-asset-res.svg?style=flat
 
 [hexo-url]: http://hexo.io/
+[post asset]: http://hexo.io/docs/writing.html#Asset_Folder
