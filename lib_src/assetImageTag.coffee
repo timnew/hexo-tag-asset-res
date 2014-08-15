@@ -6,7 +6,7 @@ isNumber = (str) ->
 metaRegex = /["']?([^"']+)?["']?\s*["']?([^"']+)?["']?/
 
 ###
-{% asset_img [.class1.class2] file_name.png [width [height]] ["title" ["hint"]] %}
+{% asset_img [.class1.class2] file_name.png [width [height]] ["caption" ["hint"]] %}
 ###
 assetImgRender = (args, content) ->
   attrs = {}

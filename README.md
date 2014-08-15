@@ -21,30 +21,45 @@ source\
       my_resume.pdf
 ```
 
-In the markdown file `2014-08-15-a-simple-self-introduction.md`, you can
-
-### Image
-
-Create `<img>` tag with
+In the markdown file `2014-08-15-a-simple-self-introduction.md`, you can reference files as
 
 ```
   {% asset_img my_portrait.jpg %}
-```
-and with get
-```
-  <img src="/2014/08/15/a-simple-self-introduction/my_portrait.jpg">
-```
-### Download
-
-Create `<a>` tag with
-
-```
   {% asset_link my_resume.pdf My Resume %}
 ```
-and with get
-```
+It generates
+
+```html
+  <img src="/2014/08/15/a-simple-self-introduction/my_portrait.jpg">
   <a href="/2014/08/15/a-simple-self-introduction/my_resume.pdf">My Resume</a>
 ```
+
+### Syntax Detail
+
+```
+  {% asset_img [.class1.class2] file_name.png [width [height]] ["caption" ["hint"]] %}
+
+  {% asset_link [.class1.class2] file_name.png "text" ["hint"] %}
+```
+
+**class** (optional): Custom css classes in CSS falvor  
+*hint*: `.class1.class2` generates `class="class1 class2"`
+
+**filename** (mandantory): The file name of the image
+
+**width** (optional): width, both `px` or `%` are accepted
+
+**height** (optional): height, both `px` or `%` are accepted  
+*hint*: `height` is only acceptable when `width` is avaiable
+
+**caption** (optional): The caption of the image.  
+*hint*: To avoid ambiguous value, always quote the text with space, `'` or `"` are both accepted
+
+**text** (mandantory): The text of the `<a>`  
+*hint*: To avoid ambiguous value, always quote the text with space, `'` or `"` are both accepted
+
+**hint** (optional): The text displayed when mouse hover  
+*hint*: To avoid ambiguous value, always quote the text with space, `'` or `"` are both accepted
 
 ## Asset Folder
 
@@ -61,9 +76,9 @@ post_asset_folder: true
 
 ## Roadmap
 
-* [ ] Custom classes
-* [ ] Width, height for `Asset Image`
-* [ ] Title and alt for `Asset Image`
+* [x] Custom classes
+* [x] Width, height for `Asset Image`
+* [x] Title and alt for `Asset Image`
 * [ ] `AssetImage` cascaded in `Asset Link`
 
 ## License
