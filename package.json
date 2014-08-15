@@ -1,0 +1,38 @@
+{
+  "name": "hexo-tag-asset-res",
+  "version": "0.1.0",
+  "description": "Hexo Tags that consume asset files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timnew/hexo-tag-asset-res.git"
+  },
+  "keywords": [
+    "hexo",
+    "tag",
+    "asset",
+    "image",
+    "link",
+    "timnew"
+  ],
+  "author": "timnew <timnew.wti@gmail.com> (https://timnew.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timnew/hexo-tag-asset-res/issues"
+  },
+  "homepage": "https://github.com/timnew/hexo-tag-asset-res",
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "del": "^0.1.2",
+    "gulp": "^3.8.7",
+    "gulp-bump": "^0.1.11",
+    "gulp-coffee": "^2.1.1",
+    "yargs": "^1.3.1"
+  },
+  "dependencies": {
+    "moment": "^2.8.1"
+  }
+}

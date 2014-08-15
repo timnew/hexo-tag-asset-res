@@ -1,4 +1,4 @@
 hexo-tag-asset-res
 ==================
 
-Hexo Tag that consumes asset files
+Hexo Tags that consumes asset files
