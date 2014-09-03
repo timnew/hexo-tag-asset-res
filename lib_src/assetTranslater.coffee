@@ -11,12 +11,12 @@ assetRegex = /<asset>([^<>]+)<\/asset>/g
 translateTag = (baseUrl, options) ->
   {tag, attr, url, text, attrs} = options
 
-  attrs[attr] = baseUrl + url
+  attrs[attr] = hexo.config.root + baseUrl + url
 
   htmlTag tag, attrs, text
 
 hexo.extend.filter.register (data, callback) ->
-  if !permalink? or permalink.rul != hexo.config.permalink
+  if !permalink? or permalink.url != hexo.config.permalink
     permalink = new Permalink hexo.config.permalink,
           segments:
             year: /(\d{4})/
