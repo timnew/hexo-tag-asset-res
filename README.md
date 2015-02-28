@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/timnew/hexo-tag-asset-res.png?label=ready&title=Ready)](https://waffle.io/timnew/hexo-tag-asset-res)
 hexo-tag-asset-res  [![NPM version][npm-image]][npm-url] [![Dependency Status][depstat-image]][depstat-url]
 ==================
 
