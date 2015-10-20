@@ -1,3 +1,7 @@
+**<h2>OBSOLETE WARNING</h2>**  
+
+**This Plug-in is designed to be used with Hexo 2. And it is considered to be obsoleted after Hexo 3 released, which already has the `asset-folder` feature built-in.**
+
 hexo-tag-asset-res  [![NPM version][npm-image]][npm-url] [![Dependency Status][depstat-image]][depstat-url][![Stories in Ready](https://badge.waffle.io/timnew/hexo-tag-asset-res.png?label=ready&title=Ready)](https://waffle.io/timnew/hexo-tag-asset-res)
 ==================
 
